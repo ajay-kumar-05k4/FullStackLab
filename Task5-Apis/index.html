@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options button {
+            margin-right: 10px;
+        }
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .current-weather {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .current-weather h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+  <form>
+    CityName<input type="text" id="city">
+    <button type="submit" id="submit" placeholder="cityname">Submit</button>
+    </form>
+
+    <div class="options">
+      <button id="currentWeatherBtn">Current Weather</button>
+      <button id="forecastBtn">Forecast</button>
+    </div>
+
+    <div id="chartButtons">
+      <button id="barChartBtn">Bar Chart</button>
+      <button id="lineChartBtn">Line Chart</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="weatherChart" width="200" height="100"></canvas>
+    </div>
+
+    <div id="currentWeather" class="current-weather" style="display: none;"></div>
+
+</body>
+<script src="script.js"></script>
+</html>
