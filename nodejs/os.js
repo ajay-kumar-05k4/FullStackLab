@@ -1,0 +1,11 @@
+const os = require('os'); 
+console.log('--- System Information ---');
+console.log(`Platform: ${os.platform()}`);
+console.log(`Architecture: ${os.arch()}`); 
+console.log(`Release: ${os.release()}`); 
+const cpuCount = os.cpus().length;
+console.log(`\nCPU Cores: ${cpuCount}`);
+console.log(`Model: ${os.cpus()[0].model}`);
+const totalMem = (os.totalmem() / (1024 ** 3)).toFixed(2);
+const freeMem = (os.freemem() / (1024 ** 3)).toFixed(2);
+console.log(`\nMemory: ${freeMem} GB free out of ${totalMem} GB`);
