@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <%- include('partials/header', { title: 'Home Page' }) %>
+
+<div class="card shadow p-4">
+    <h3 class="mb-3">Add User</h3>
+
+    <form action="/about" method="get">
+        <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="number" name="age" class="form-control" placeholder="Enter your age" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

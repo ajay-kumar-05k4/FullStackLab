@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page</title>
+</head>
+<body>
+  <%- include('partials/header', { title: 'Users Page' }) %>
+
+<h2 class="mb-4">All Users</h2>
+
+<div class="row">
+
+    <% if (users.length > 0) { %>
+        <% users.forEach(function(user) { %>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><%= user.name %></h5>
+                        <p class="card-text">Age: <%= user.age %></p>
+                        <span class="badge bg-success">Active User</span>
+                    </div>
+                </div>
+            </div>
+
+        <% }); %>
+    <% } else { %>
+        <p>No users available.</p>
+    <% } %>
+
+</div>
+
+<%- include('partials/footer') %>
+
+
+</body>
+</html>
