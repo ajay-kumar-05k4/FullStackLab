@@ -1,0 +1,33 @@
+<%- include('partials/header', { title: 'Register' }) %>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow p-4">
+            <h3 class="text-center mb-4">Student Registration</h3>
+
+            <form action="/register" method="POST">
+
+                <input class="form-control mb-3" name="name" placeholder="Full Name" required>
+
+                <input class="form-control mb-3" name="rollno" placeholder="Roll Number" required>
+
+                <input class="form-control mb-3" name="className" placeholder="Class" required>
+
+                <input class="form-control mb-3" name="course" placeholder="Course" required>
+
+                <input class="form-control mb-3" name="subjects" placeholder="Subjects (comma separated)" required>
+
+                <input class="form-control mb-3" type="email" name="email" placeholder="Email Address" required>
+
+                <textarea class="form-control mb-3" name="address" placeholder="Address" required></textarea>
+
+                <input class="form-control mb-4" type="password" name="password" placeholder="Create Password" required>
+
+                <button class="btn btn-success w-100">Register</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

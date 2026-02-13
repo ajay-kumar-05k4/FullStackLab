@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ajay",
+    "rollno": "12345",
+    "className": "d",
+    "course": "cse",
+    "subjects": "x,y,z",
+    "email": "ajay@gmail.com",
+    "address": "ajay123456",
+    "password": "12345"
+  },
+  {
+    "name": "ajay",
+    "rollno": "19823",
+    "className": "d",
+    "course": "cse",
+    "subjects": "x,y,z",
+    "email": "8ii88@gmail.com",
+    "address": "7u77",
+    "password": "45321"
+  }
+]

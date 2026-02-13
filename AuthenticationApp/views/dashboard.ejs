@@ -1,0 +1,44 @@
+<%- include('partials/header', { title: 'Dashboard' }) %>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow p-4">
+
+            <h3 class="mb-4 text-center">Welcome, <%= user.name %> 🎉</h3>
+
+            <table class="table table-bordered">
+                <tr>
+                    <th>Roll Number</th>
+                    <td><%= user.rollno %></td>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <td><%= user.className %></td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td><%= user.course %></td>
+                </tr>
+                <tr>
+                    <th>Subjects</th>
+                    <td><%= user.subjects %></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><%= user.email %></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><%= user.address %></td>
+                </tr>
+            </table>
+
+            <div class="text-center mt-3">
+                <a href="/logout" class="btn btn-danger">Logout</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
